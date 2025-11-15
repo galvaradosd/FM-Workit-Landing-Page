@@ -1,0 +1,380 @@
+/* Font Family Fraunces - Manrope */
+
+@font-face {
+  font-family: "Fraunces", serif;
+  src: url(./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+  font-family: "Manrope", sans-serif;
+  src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+/* Box-sizing intuitivo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remueve márgenes por defecto */
+* {
+  margin: 0;
+}
+
+/* Mejora la legibilidad del body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elementos multimedia como bloques y responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Elementos de formulario heredan tipografía */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Previene desbordamiento de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Mejora el renderizado de texto (propiedades nuevas) */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Crea contexto de apilamiento para apps React/Next.js */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* Color palette */
+  --color-green: #44ffa1;
+  --color-purple-900: #24053e;
+  --color-purple-500: #584d62;
+  --color-purple-100: #fcf8ff;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --primary-font: "Fraunces", serif;
+  --secondary-font: "Manrope", sans-serif;
+
+  /* Font Sizes */
+  --fs-heading-xl: 5rem; /* 80px */
+  --fs-heading-l: 3.5rem; /* 56px */
+  --fs-heading-m: 2rem; /* 32px */
+  --fs-body: 1.125rem; /* 18px */
+  --fs-button: 1.125rem; /* 18px */
+
+  /* Line Heights */
+  --lh-heading-xl: 1;
+  --lh-heading-l: 1.2;
+  --lh-heading-m: 1.2;
+  --lh-body: 1.8;
+  --lh-button: 1.8;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing Scale */
+  --spacing-3700: 18.5rem; /* 296px */
+  --spacing-2100: 10.5rem; /* 168px */
+  --spacing-1800: 9rem; /* 144px */
+  --spacing-1600: 8rem; /* 128px */
+  --spacing-1400: 7rem; /* 112px */
+  --spacing-1100: 5.5rem; /* 88px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-550: 2.75rem; /* 44px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-350: 1.75rem; /* 28px */
+  --spacing-250: 1.25rem; /* 20px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-100: 0.5rem; /* 8px */
+}
+
+/* ====================================================
+                      1. BODY
+   ==================================================== */
+
+body {
+  background-color: var(--color-white);
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  font-weight: var(--fw-regular);
+  color: var(--color-purple-500);
+  line-height: var(--lh-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-semibold);
+  color: var(--color-purple-900);
+  line-height: var(--lh-heading-m);
+}
+
+/* ====================================================
+                    2. HEADER
+   ==================================================== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem; /* 32px 16px mobile */
+  background-color: var(--color-purple-900);
+}
+
+.header__logo {
+  width: 6rem; /* 96px */
+  height: 1.5625rem; /* 25px */
+}
+
+.header__logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__link {
+  font-family: var(--secondary-font);
+  font-size: var(--fs-body); /* 18px */
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-button);
+  color: var(--color-white);
+  text-decoration: none;
+  border-bottom: 0.1875rem solid var(--color-green); /* 3px */
+  padding-bottom: 0.25rem; /* 4px */
+  transition: color 0.3s ease;
+}
+
+.header__link:hover {
+  color: var(--color-green);
+}
+
+/* ====================================================
+                  3. HERO
+   ==================================================== */
+
+.main__hero {
+  position: relative;
+  background-color: var(--color-purple-900);
+  padding: var(--spacing-700) var(--spacing-200) 15rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Curva decorativa inferior */
+
+/* .main__hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  transform: scaleX(1.5);
+} */
+
+/* Patrones decorativos - ocultos en mobile */
+
+.hero__pattern {
+  display: none;
+  position: absolute;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.hero__content h1 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-500);
+}
+
+.hero__btn {
+  background-color: var(--color-green);
+  color: var(--color-purple-900);
+  font-family: var(--secondary-font);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-button);
+  padding: var(--spacing-150) var(--spacing-400);
+  border: 0.13rem solid var(--color-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero__btn:hover {
+  background-color: transparent;
+  color: var(--color-green);
+}
+
+.hero__bg-img {
+  position: absolute;
+  bottom: -12.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 80%;
+  max-width: 20rem;
+}
+
+.hero__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ====================================================
+                  4. CONTENT
+   ==================================================== */
+
+/* ====================================================
+                  5. CTA
+   ==================================================== */
+
+/* ====================================================
+                  6. FOOTER
+   ==================================================== */
+
+/* ====================================================
+                  7. RESPONSIVE
+   ==================================================== */
+
+/*  TABLET & DESKTOP HEADER */
+
+@media (min-width: 768px) {
+  .header {
+    padding: var(--spacing-500);
+  }
+
+  .header__logo {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    max-width: 100%; /* 1440px */
+    margin: 0 auto;
+    padding: var(--spacing-700) var(--spacing-1100);
+  }
+}
+
+/* TABLET HERO */
+
+@media (min-width: 768px) {
+  .main__hero {
+    padding: var(--spacing-800) var(--spacing-500) 18.8rem;
+  }
+
+  .main__hero::after {
+    height: 3.75rem;
+  }
+
+  .hero__pattern {
+    display: block;
+    z-index: 1;
+  }
+
+  .hero__pattern--left {
+    top: 6.25rem;
+    left: -9.4rem;
+    width: 16.9rem;
+  }
+
+  .hero__pattern--right {
+    top: 16rem;
+    right: -6rem;
+    width: 10.9rem;
+  }
+
+  .hero__content h1 {
+    font-size: var(--fs-heading-l);
+  }
+  .hero__bg-img {
+    bottom: -15.625rem;
+    max-width: 30rem;
+  }
+}
+
+/* DESKTOP HERO */
+
+@media (min-width: 1440px) {
+  .main__hero {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero__content h1 {
+    font-size: var(--fs-heading-xl);
+  }
+
+  .hero__pattern {
+    display: block;
+    z-index: 1;
+  }
+
+  .hero__pattern--left {
+    top: 2rem;
+    left: -4rem;
+    width: 16.9rem;
+  }
+
+  .hero__pattern--right {
+    top: 16rem;
+    right: -1.5rem;
+    width: 10.9rem;
+  }
+}

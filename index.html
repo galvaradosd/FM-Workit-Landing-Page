@@ -1,49 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Workit landing page</title>
 </head>
+
 <body>
 
-  Apply for access
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img src="./assets/images/logo-light.svg" alt="Workit logo">
+    </a>
+    <a href="#" class="header__link">Apply for access</a>
+  </header>
 
-  Data tailored to your needs.
+  <!--  ===================================================
+                  CONTENIDO PRINCIPAL (main)
+        =================================================== -->
 
-  Learn more
-  
-  1
+  <main class="main">
+    <div class="main__hero">
+      <!-- Patrones decorativos -->
+      <img src="./assets/images/bg-pattern-1.svg" alt="" class="hero__pattern hero__pattern--left">
+      <img src="./assets/images/bg-pattern-2.svg" alt="" class="hero__pattern hero__pattern--right">
 
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
+      <div class="hero__content">
+        <h1>Data <span class="underline">tailored</span> to your needs.</h1>
+        <button type="button" class="hero__btn">Learn more</button>
+      </div>
 
-  2
+      <div class="hero__phone">
+        <img src="./assets/images/image-hero.webp" alt="Phone displaying app interface">
+      </div>
+    </div>
 
-  Data-driven decisions
+    <!-- CONTENT SECTION -->
+    <section class="main__content">
+      <div class="content__card">
 
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
+        <div class="card__number">1</div>
 
-  3
+        <h2 class="card__title">Actionable insights</h2>
 
-  Always affordable
+        <p class="card__content"> Optimize your products, improve customer satisfaction and stay ahead of the
+          competition
+          with our product data analytics.</p>
+      </div>
 
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
+      <div class="content__card">
 
-  Be the first to test
+        <div class="card__number">2</div>
+        <h2 class="card__title">Data-driven decisions</h2>
 
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
+        <p class="card__content">Make data-driven decisions with our product data analytics. Our AI-generated reports
+          help
+          you unlock insights hidden in your product data.</p>
+      </div>
 
-  Apply for access
+      <div class="content__card">
+
+        <div class="card__number">3</div>
+
+        <h2 class="card__title">Always affordable</h2>
+
+        <p class="card__content">Always affordable pricing that scales with your business. Get top-quality product data
+          analytics services without hidden costs or unexpected fees.</p>
+      </div>
+    </section>
+    <!-- CALL TO ACTION SECTION -->
+    <section class="main__cta">
+      <h2 class="cta__title">Be the first to test</h2>
+
+      <p class="cta__content">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a
+        beta tester for our app and kickstart your company. Apply for access below and I’ll be
+        in touch to schedule a call.</p>
+
+      <button class="cta__btn" type="button">Apply for access</button>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 
 </body>
+
 </html>
