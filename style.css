@@ -262,7 +262,7 @@ h3 {
                   4. CONTENT
    ==================================================== */
 .main__content {
-  padding: 25rem 10rem 12rem 10rem;
+  padding: 25rem 10rem 8rem 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--color-purple-100);
@@ -416,8 +416,306 @@ h3 {
                   7. RESPONSIVE
    ==================================================== */
 
-/*  TABLET & DESKTOP HEADER */
+/* ====================
+    MOBILE (375px)
+   ==================== */
 
-/* TABLET HERO */
+@media (max-width: 767px) {
+  /* MOBILE HEADER */
+  .header {
+    padding: 2rem 1rem;
+    height: auto;
+  }
 
-/* DESKTOP HERO */
+  .header__logo {
+    width: 6rem;
+  }
+
+  .header__link {
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom-width: 0.1875rem;
+  }
+
+  /* MOBILE HERO */
+  .main__hero {
+    background: var(--color-purple-900);
+    padding-bottom: 3%;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 21.4375rem; /* 343px */
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    padding-bottom: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 3.125rem; /* 50px */
+    line-height: 1;
+    margin-bottom: 2.5rem;
+  }
+
+  .underline {
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.1875rem;
+  }
+
+  .hero__btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero__phone {
+    width: 20rem; /* 320px */
+    top: 18rem;
+    bottom: -10rem;
+  }
+
+  .hero__curve {
+    width: 100%;
+  }
+
+  /* MOBILE CONTENT */
+  .main__content {
+    padding: 4rem 1rem 4rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .content__card {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .card__number {
+    font-size: 1.25rem; /* 20px */
+    width: 3rem; /* 48px */
+    height: 3rem;
+  }
+
+  .card__title {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .card__content {
+    font-size: 1rem; /* 16px */
+  }
+
+  /* MOBILE CTA */
+  .main__cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 6rem 1rem 4rem;
+    gap: 2rem;
+  }
+
+  .cta__img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 17.5625rem; /* 281px */
+    margin: 0 auto;
+  }
+
+  .cta__card {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    background: var(--color-purple-900);
+  }
+
+  .cta__title {
+    font-size: 2rem; /* 32px */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .cta__content {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta__btn {
+    padding: 0.6875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* MOBILE FOOTER */
+  .footer {
+    padding: 4.625rem 1rem;
+    gap: 3.625rem;
+  }
+
+  .logo__img {
+    width: 6rem; /* 96px */
+  }
+
+  .footer__social {
+    gap: 1.75rem;
+  }
+
+  .social__icon {
+    width: 1.25rem; /* 20px */
+  }
+}
+
+/* ====================
+    TABLET (768px)
+   ==================== */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  /* TABLET HEADER */
+  .header {
+    padding: 2rem 2.5rem;
+    height: auto;
+  }
+
+  .header__logo {
+    width: 7.5rem;
+  }
+
+  .header__link {
+    font-size: 1rem;
+  }
+
+  /* TABLET HERO */
+  .main__hero {
+    background: url("/assets/images/bg-pattern-1.svg") no-repeat -120px 120px / 16.9rem,
+      url("/assets/images/bg-pattern-2.svg") no-repeat 110% 290px / 8.8rem,
+      var(--color-purple-900);
+    padding-bottom: 12rem;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 36rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1cqh;
+    padding-bottom: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+    margin-bottom: 2.5rem;
+  }
+
+  .underline {
+    text-underline-offset: 0.625rem;
+  }
+
+  .hero__btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero__phone {
+    width: 30rem; /* 640px */
+    top: auto;
+    bottom: -6rem;
+  }
+
+  .hero__curve {
+    width: 100%;
+  }
+
+  /* TABLET CONTENT */
+  .main__content {
+    padding: 12.5rem 6.125rem 5rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .content__card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem 2rem;
+    text-align: left;
+    align-items: start;
+  }
+
+  .card__number {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    font-size: 1.5rem; /* 24px */
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+  }
+
+  .card__title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 2rem; /* 32px */
+    align-self: center;
+  }
+
+  .card__content {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1rem;
+  }
+
+  /* TABLET CTA */
+  .main__cta {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    padding: 7.5rem 2.5rem 5rem;
+    gap: 0;
+  }
+
+  .cta__img {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    width: 17.5625rem; /* 281px */
+  }
+
+  .cta__card {
+    grid-column: 4 / span 9;
+    grid-row: 1;
+    padding: 3rem;
+    margin-top: 11rem;
+    background: url(/assets/images/bg-pattern-3.svg) no-repeat 90% -60px / 13.5rem,
+      var(--color-purple-900);
+  }
+
+  .cta__title {
+    font-size: 3rem; /* 48px */
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta__content {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta__btn {
+    padding: 0.6875rem 1.625rem;
+    font-size: 1rem;
+  }
+
+  /* TABLET FOOTER */
+  .footer {
+    padding: 5rem 2.5rem;
+    gap: 3.5rem;
+  }
+
+  .logo__img {
+    width: 7.5rem; /* 120px */
+  }
+
+  .footer__social {
+    gap: 1.75rem;
+  }
+
+  .social__icon {
+    width: 1.25rem; /* 20px */
+  }
+}
