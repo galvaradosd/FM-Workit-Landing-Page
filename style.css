@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Fraunces", serif;
-  src: url(./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+  src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
   font-family: "Manrope", sans-serif;
   src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
 }
@@ -87,11 +87,11 @@ h6 {
   --secondary-font: "Manrope", sans-serif;
 
   /* Font Sizes */
-  --fs-heading-xl: 5rem; /* 80px */
-  --fs-heading-l: 3.5rem; /* 56px */
-  --fs-heading-m: 2rem; /* 32px */
-  --fs-body: 1.125rem; /* 18px */
-  --fs-button: 1.5rem; /* 18px */
+  --fs-heading-xl: 5rem;
+  --fs-heading-l: 3.5rem;
+  --fs-heading-m: 2rem;
+  --fs-body: 1.125rem;
+  --fs-button: 1.5rem;
 
   /* Line Heights */
   --lh-heading-xl: 2;
@@ -189,8 +189,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background: url("/assets/images/bg-pattern-1.svg") no-repeat -100px 100px,
-    url("/assets/images/bg-pattern-2.svg") no-repeat 104% 360px,
+  background: url("/assets/images/bg-pattern-1.svg") no-repeat -120px 60px / 30rem,
+    url("/assets/images/bg-pattern-2.svg") no-repeat 104% 320px / 15rem,
     var(--color-purple-900);
 }
 
@@ -202,13 +202,14 @@ h3 {
   text-align: center;
   margin-top: 6rem;
   margin-bottom: 20rem;
+  padding-bottom: var(--spacing-1600);
 }
 
 .hero__content h1 {
   font-family: var(--primary-font);
   font-size: 6rem;
   line-height: var(--lh-heading-m);
-  margin-bottom: var(--spacing-1100);
+  margin-bottom: var(--spacing-800);
   color: var(--color-white);
 }
 
@@ -221,7 +222,7 @@ h3 {
 
 .hero__btn {
   display: inline-block;
-  padding: 0.75rem 4rem;
+  padding: 0.75rem 3rem;
   font-family: var(--secondary-font);
   font-size: var(--fs-button);
   font-weight: var(--fw-bold);
@@ -241,10 +242,10 @@ h3 {
 }
 
 .hero__phone {
-  width: 45%;
+  width: 55%;
   height: auto;
   position: absolute;
-  top: 65%;
+  top: 60%;
   z-index: 2;
 }
 
@@ -261,11 +262,12 @@ h3 {
                   4. CONTENT
    ==================================================== */
 .main__content {
-  padding: 25rem 20rem 12rem 20rem;
-  display: flex;
-  align-items: center;
+  padding: 25rem 10rem 12rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: var(--color-purple-100);
-  gap: var(--spacing-1000);
+  gap: var(--spacing-800);
+  justify-content: space-around;
 }
 
 .content__curve {
@@ -280,6 +282,7 @@ h3 {
 .content__card {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   gap: var(--spacing-800);
   background-color: var(--color-purple-100);
   text-align: center;
@@ -294,8 +297,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   margin: 0 auto;
 }
 
@@ -320,7 +323,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  padding: 4rem 20rem 2rem 20rem;
+  padding: 10rem 20rem 2rem 20rem;
   text-align: center;
   background-color: var(--color-white);
 }
@@ -386,6 +389,28 @@ h3 {
 /* ====================================================
                   6. FOOTER
    ==================================================== */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-1600);
+  gap: var(--spacing-800);
+}
+
+.logo__img {
+  width: 12rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--spacing-800);
+}
+
+.social__icon {
+  width: 2.5rem;
+}
 
 /* ====================================================
                   7. RESPONSIVE
