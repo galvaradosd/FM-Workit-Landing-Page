@@ -4,90 +4,90 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20|%20Tablet%20|%20Desktop-green?style=for-the-badge)
 
-> Una landing page moderna y responsive para Workit, una aplicación de gestión de datos empresariales con análisis impulsado por IA.
+> A modern and responsive landing page for Workit, a business data management application with AI-powered analytics.
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [Vista Previa](#-vista-previa)
-- [Características](#-características)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Instalación y Uso](#-instalación-y-uso)
-- [Diseño Responsive](#-diseño-responsive)
-- [Sistema de Diseño](#-sistema-de-diseño)
-- [Desafíos y Soluciones](#-desafíos-y-soluciones)
-- [Mejoras Futuras](#-mejoras-futuras)
-- [Autor](#-autor)
-- [Licencia](#-licencia)
+- [Preview](#-preview)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Project Structure](#-project-structure)
+- [Installation and Usage](#-installation-and-usage)
+- [Responsive Design](#-responsive-design)
+- [Design System](#-design-system)
+- [Challenges and Solutions](#-challenges-and-solutions)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## 🎨 Vista Previa
+## 🎨 Preview
 
 ### Desktop (1440px)
 
-El diseño desktop presenta un layout espacioso de 3 columnas con patrones decorativos, curvas ornamentales y tipografía grande e impactante.
+The desktop design features a spacious 3-column layout with decorative patterns, ornamental curves, and large, impactful typography.
 
 ### Tablet (768px)
 
-Layout híbrido con cards horizontales donde los números decorativos se alinean a la izquierda del contenido.
+Hybrid layout with horizontal cards where decorative numbers align to the left of the content.
 
 ### Mobile (375px)
 
-Diseño vertical optimizado para móviles con stack de elementos y tipografía ajustada para pantallas pequeñas.
+Vertical design optimized for mobile with stacked elements and typography adjusted for small screens.
 
 ---
 
-## ✨ Características
+## ✨ Features
 
-### 🎯 Funcionalidades Principales
+### 🎯 Main Functionalities
 
-- ✅ **Diseño 100% Responsive** - Optimizado para mobile, tablet y desktop
-- ✅ **Curvas Decorativas Orgánicas** - Implementadas con `clip-path` CSS
-- ✅ **Patrones SVG Decorativos** - Backgrounds múltiples con posicionamiento preciso
-- ✅ **Hover States Interactivos** - Transiciones suaves en botones y enlaces
-- ✅ **Tipografía Variable** - Fuentes Fraunces y Manrope para jerarquía visual
-- ✅ **Sistema de Design Tokens** - CSS Custom Properties para consistencia
-- ✅ **HTML Semántico** - Estructura accesible y SEO-friendly
-- ✅ **Grid Layout Avanzado** - CSS Grid para layouts complejos
+- ✅ **100% Responsive Design** - Optimized for mobile, tablet, and desktop
+- ✅ **Organic Decorative Curves** - Implemented with CSS `clip-path`
+- ✅ **Decorative SVG Patterns** - Multiple backgrounds with precise positioning
+- ✅ **Interactive Hover States** - Smooth transitions on buttons and links
+- ✅ **Variable Typography** - Fraunces and Manrope fonts for visual hierarchy
+- ✅ **Design Token System** - CSS Custom Properties for consistency
+- ✅ **Semantic HTML** - Accessible and SEO-friendly structure
+- ✅ **Advanced Grid Layout** - CSS Grid for complex layouts
 
-### 🔍 Secciones Implementadas
+### 🔍 Implemented Sections
 
-1. **Header**: Navegación con logo y CTA
-2. **Hero Section**: Título principal con línea decorativa y botón primario
-3. **Features Section**: 3 características con números decorativos circulares
-4. **CTA Section**: Biografía del fundador con imagen circular y fondo decorado
-5. **Footer**: Logo y enlaces a redes sociales
-
----
-
-## 🛠 Tecnologías Utilizadas
-
-### Lenguajes y Frameworks
-
-- **HTML5** - Estructura semántica del contenido
-- **CSS3** - Estilos avanzados y layout responsive
-
-### Técnicas CSS Avanzadas
-
-- **CSS Custom Properties (Variables)** - Sistema de tokens de diseño
-- **CSS Grid** - Layout de múltiples columnas
-- **Flexbox** - Alineación y distribución de elementos
-- **Clip-path** - Formas orgánicas y curvas decorativas
-- **Multiple Backgrounds** - Patrones decorativos superpuestos
-- **Media Queries** - Diseño responsive
-
-### Recursos
-
-- **Fuentes Variables**: Fraunces 144pt & Manrope
-- **SVG Icons**: Patrones decorativos y logos
-- **WebP Images**: Optimización de imágenes
+1. **Header**: Navigation with logo and CTA
+2. **Hero Section**: Main title with decorative line and primary button
+3. **Features Section**: 3 features with circular decorative numbers
+4. **CTA Section**: Founder biography with circular image and decorated background
+5. **Footer**: Logo and social media links
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🛠 Technologies Used
+
+### Languages and Frameworks
+
+- **HTML5** - Semantic content structure
+- **CSS3** - Advanced styles and responsive layout
+
+### Advanced CSS Techniques
+
+- **CSS Custom Properties (Variables)** - Design token system
+- **CSS Grid** - Multi-column layouts
+- **Flexbox** - Element alignment and distribution
+- **Clip-path** - Organic shapes and decorative curves
+- **Multiple Backgrounds** - Overlapping decorative patterns
+- **Media Queries** - Responsive design
+
+### Resources
+
+- **Variable Fonts**: Fraunces 144pt & Manrope
+- **SVG Icons**: Decorative patterns and logos
+- **WebP Images**: Image optimization
+
+---
+
+## 📁 Project Structure
 
 ```
 FM-Workit-Landing-Page/
@@ -106,129 +106,129 @@ FM-Workit-Landing-Page/
 │   │       └── Manrope-VariableFont_wght.ttf
 │   │
 │   └── 📂 images/
-│       ├── bg-pattern-1.svg          # Patrón decorativo izquierdo
-│       ├── bg-pattern-2.svg          # Patrón decorativo derecho
-│       ├── bg-pattern-3.svg          # Curva ornamental
+│       ├── bg-pattern-1.svg          # Left decorative pattern
+│       ├── bg-pattern-2.svg          # Right decorative pattern
+│       ├── bg-pattern-3.svg          # Ornamental curve
 │       ├── favicon-32x32.png
 │       ├── icon-facebook.svg
 │       ├── icon-instagram.svg
 │       ├── icon-twitter.svg
-│       ├── image-founder.webp        # Foto del fundador
-│       ├── image-hero.webp           # Imagen del teléfono
+│       ├── image-founder.webp        # Founder photo
+│       ├── image-hero.webp           # Phone image
 │       ├── logo-dark.svg
 │       └── logo-light.svg
 │
-├── 📄 index.html                     # Estructura HTML principal
-├── 📄 style.css                      # Estilos CSS completos
-└── 📄 README.md                      # Este archivo
+├── 📄 index.html                     # Main HTML structure
+├── 📄 style.css                      # Complete CSS styles
+└── 📄 README.md                      # This file
 ```
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-### Opción 1: Clonar el Repositorio
+### Option 1: Clone the Repository
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/galvaradosd/FM-Workit-Landing-Page.git
 
-# Navegar al directorio
+# Navigate to the directory
 cd FM-Workit-Landing-Page
 
-# Abrir con Live Server o cualquier servidor local
+# Open with Live Server or any local server
 ```
 
-### Opción 2: Servidor Local
+### Option 2: Local Server
 
-**Con Python 3:**
+**With Python 3:**
 
 ```bash
 python -m http.server 8000
-# Abrir http://localhost:8000
+# Open http://localhost:8000
 ```
 
-**Con Node.js:**
+**With Node.js:**
 
 ```bash
 npx http-server
-# Abrir http://localhost:8080
+# Open http://localhost:8080
 ```
 
-**Con PHP:**
+**With PHP:**
 
 ```bash
 php -S localhost:8000
 ```
 
-### Opción 3: Abrir Directamente
+### Option 3: Open Directly
 
-Simplemente abre el archivo `index.html` en tu navegador favorito.
+Simply open the `index.html` file in your favorite browser.
 
 ---
 
-## 📱 Diseño Responsive
+## 📱 Responsive Design
 
-### Breakpoints Definidos
+### Defined Breakpoints
 
-| Dispositivo    | Ancho Mínimo | Ancho Máximo | Características                   |
-| -------------- | ------------ | ------------ | --------------------------------- |
-| 📱 **Mobile**  | 320px        | 767px        | Stack vertical, 1 columna         |
-| 📱 **Tablet**  | 768px        | 1439px       | Layout híbrido, 2 columnas        |
-| 💻 **Desktop** | 1440px       | ∞            | Grid 3 columnas, espaciado máximo |
+| Device         | Min Width | Max Width | Features                       |
+| -------------- | --------- | --------- | ------------------------------ |
+| 📱 **Mobile**  | 320px     | 767px     | Vertical stack, 1 column       |
+| 📱 **Tablet**  | 768px     | 1439px    | Hybrid layout, 2 columns       |
+| 💻 **Desktop** | 1440px    | ∞         | 3-column grid, maximum spacing |
 
 ### Mobile First Approach
 
 #### Mobile (375px base)
 
 ```css
-- Layout: 1 columna vertical
-- Tipografía: H1 50px → 80px en desktop
-- Patrones: Reescalados y reposicionados
+- Layout: 1 vertical column
+- Typography: H1 50px → 80px on desktop
+- Patterns: Rescaled and repositioned
 - Hero Image: 320px width
 - Padding: 1rem (16px) lateral
-- CTA: Stack vertical completo
+- CTA: Full vertical stack
 ```
 
 #### Tablet (768px)
 
 ```css
-- Layout: Cards horizontales con número a la izquierda
-- Tipografía: H1 60px
+- Layout: Horizontal cards with number on the left
+- Typography: H1 60px
 - Hero Image: 327px width
 - Padding: 2.5rem (40px) lateral
-- CTA: Overlap con imagen del fundador
+- CTA: Overlap with founder image
 ```
 
 #### Desktop (1440px)
 
 ```css
-- Layout: Grid 3 columnas para features
-- Tipografía: H1 80px (max size)
+- Layout: 3-column grid for features
+- Typography: H1 80px (max size)
 - Hero Image: 477px width
 - Padding: 10.3125rem (165px) lateral
-- CTA: Máximo overlap y espaciado
-- Patrones: Tamaño completo optimizado
+- CTA: Maximum overlap and spacing
+- Patterns: Optimized full size
 ```
 
 ---
 
-## 🎨 Sistema de Diseño
+## 🎨 Design System
 
-### Paleta de Colores
+### Color Palette
 
 ```css
 /* Primary Colors */
---color-purple-900: #24053e; /* Backgrounds oscuros, headings */
+--color-purple-900: #24053e; /* Dark backgrounds, headings */
 --color-purple-500: #584d62; /* Body text */
---color-purple-100: #fcf8ff; /* Backgrounds claros */
+--color-purple-100: #fcf8ff; /* Light backgrounds */
 
 /* Accent Colors */
---color-green: #44ffa1; /* CTA, hover states, decoración */
---color-white: #ffffff; /* Text sobre fondos oscuros */
+--color-green: #44ffa1; /* CTA, hover states, decoration */
+--color-white: #ffffff; /* Text on dark backgrounds */
 ```
 
-### Tipografía
+### Typography
 
 #### Font Families
 
@@ -258,10 +258,10 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 #### Line Heights
 
 ```css
---lh-heading-xl: 1; /* Tight para headings grandes */
+--lh-heading-xl: 1; /* Tight for large headings */
 --lh-heading-l: 1.2;
 --lh-heading-m: 1.2;
---lh-body: 1.8; /* Cómodo para lectura */
+--lh-body: 1.8; /* Comfortable for reading */
 --lh-button: 1.8;
 ```
 
@@ -289,28 +289,28 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 
 ---
 
-## 💡 Desafíos y Soluciones
+## 💡 Challenges and Solutions
 
-### 1. Curvas Orgánicas Decorativas
+### 1. Organic Decorative Curves
 
-**Desafío**: Crear curvas suaves que separen las secciones de forma elegante.
+**Challenge**: Create smooth curves that elegantly separate sections.
 
-**Solución**:
+**Solution**:
 
 ```css
 .main__hero::after {
   content: "";
   clip-path: ellipse(100% 100% at 50% 100%);
   background-color: var(--color-purple-100);
-  height: 4.5rem; /* 72px en desktop */
+  height: 4.5rem; /* 72px on desktop */
 }
 ```
 
-### 2. Múltiples Backgrounds con Posicionamiento Preciso
+### 2. Multiple Backgrounds with Precise Positioning
 
-**Desafío**: Colocar patrones SVG decorativos en posiciones exactas según el diseño de Figma.
+**Challenge**: Place decorative SVG patterns in exact positions according to the Figma design.
 
-**Solución**:
+**Solution**:
 
 ```css
 .main__hero {
@@ -319,11 +319,11 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 }
 ```
 
-### 3. Números Decorativos Circulares
+### 3. Circular Decorative Numbers
 
-**Desafío**: Crear números perfectamente circulares con borde.
+**Challenge**: Create perfectly circular numbers with borders.
 
-**Solución**:
+**Solution**:
 
 ```css
 .card__number {
@@ -337,20 +337,20 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 }
 ```
 
-### 4. Layout Responsive Complejo
+### 4. Complex Responsive Layout
 
-**Desafío**: Cambiar de layout vertical (mobile) a horizontal (tablet) a 3 columnas (desktop).
+**Challenge**: Change from vertical layout (mobile) to horizontal (tablet) to 3 columns (desktop).
 
-**Solución**: CSS Grid con media queries específicas:
+**Solution**: CSS Grid with specific media queries:
 
 ```css
-/* Mobile: 1 columna */
+/* Mobile: 1 column */
 .main__content {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-/* Desktop: 3 columnas */
+/* Desktop: 3 columns */
 @media (min-width: 1440px) {
   .main__content {
     grid-template-columns: repeat(3, 1fr);
@@ -358,11 +358,11 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 }
 ```
 
-### 5. Overlap de Elementos (CTA Section)
+### 5. Element Overlap (CTA Section)
 
-**Desafío**: Superponer la imagen del fundador con el card de CTA.
+**Challenge**: Overlap the founder's image with the CTA card.
 
-**Solución**: Grid con columnas superpuestas:
+**Solution**: Grid with overlapping columns:
 
 ```css
 .main__cta {
@@ -382,75 +382,75 @@ Simplemente abre el archivo `index.html` en tu navegador favorito.
 
 ---
 
-## 🚀 Mejoras Futuras
+## 🚀 Future Improvements
 
-### En Desarrollo
+### In Development
 
-- [ ] **Animaciones de Scroll** - Reveal animations con Intersection Observer
-- [ ] **Modo Oscuro** - Toggle para tema dark con CSS variables
-- [ ] **Formulario Funcional** - Integración con backend para "Apply for access"
-- [ ] **Validación de Formularios** - Validación client-side con JavaScript
-- [ ] **Optimización de Imágenes** - Conversión a formatos modernos (AVIF, WebP)
-- [ ] **Lazy Loading** - Carga diferida de imágenes bajo el fold
-- [ ] **Performance Optimization** - Critical CSS y async loading
+- [ ] **Scroll Animations** - Reveal animations with Intersection Observer
+- [ ] **Dark Mode** - Toggle for dark theme with CSS variables
+- [ ] **Functional Form** - Backend integration for "Apply for access"
+- [ ] **Form Validation** - Client-side validation with JavaScript
+- [ ] **Image Optimization** - Conversion to modern formats (AVIF, WebP)
+- [ ] **Lazy Loading** - Deferred loading of below-the-fold images
+- [ ] **Performance Optimization** - Critical CSS and async loading
 
-### Características Adicionales
+### Additional Features
 
-- [ ] **Microinteracciones** - Animaciones sutiles en hover
-- [ ] **Smooth Scroll** - Navegación suave entre secciones
-- [ ] **Testimonios Slider** - Carrusel de testimonios de clientes
-- [ ] **Analytics Integration** - Google Analytics o similar
-- [ ] **A11y Improvements** - Mejoras adicionales de accesibilidad
-- [ ] **i18n Support** - Soporte multiidioma
+- [ ] **Microinteractions** - Subtle hover animations
+- [ ] **Smooth Scroll** - Smooth navigation between sections
+- [ ] **Testimonials Slider** - Customer testimonials carousel
+- [ ] **Analytics Integration** - Google Analytics or similar
+- [ ] **A11y Improvements** - Additional accessibility enhancements
+- [ ] **i18n Support** - Multi-language support
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Germán Alvarado**
 
 - 🐙 GitHub: [@galvaradosd](https://github.com/galvaradosd)
-- 💼 LinkedIn: [Tu perfil de LinkedIn](https://www.linkedin.com/in/tu-perfil)
+- 💼 LinkedIn: [Your LinkedIn profile](https://www.linkedin.com/in/your-profile)
 - 🎨 Frontend Mentor: [@galvaradosd](https://www.frontendmentor.io/profile/galvaradosd)
-- 📧 Email: tu-email@ejemplo.com
+- 📧 Email: your-email@example.com
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto fue creado como parte de un desafío de [Frontend Mentor](https://www.frontendmentor.io).
+This project was created as part of a [Frontend Mentor](https://www.frontendmentor.io) challenge.
 
 **Frontend Mentor Challenge**: [Workit Landing Page](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu)
 
-El código está disponible bajo la licencia MIT para fines educativos y de portafolio.
+The code is available under the MIT license for educational and portfolio purposes.
 
 ---
 
-## 🙏 Agradecimientos
+## 🙏 Acknowledgments
 
-- **Frontend Mentor** - Por proporcionar el diseño y el desafío
-- **Figma** - Por las especificaciones detalladas de diseño
-- **Google Fonts** - Por las tipografías Fraunces y Manrope
-- **Comunidad de Frontend Mentor** - Por feedback y sugerencias
+- **Frontend Mentor** - For providing the design and challenge
+- **Figma** - For detailed design specifications
+- **Google Fonts** - For Fraunces and Manrope typography
+- **Frontend Mentor Community** - For feedback and suggestions
 
 ---
 
-## 📊 Estadísticas del Proyecto
+## 📊 Project Stats
 
 ```
-📝 Líneas de CSS: ~800+
-🎨 Componentes: 5 secciones principales
+📝 Lines of CSS: ~800+
+🎨 Components: 5 main sections
 📱 Breakpoints: 3 (Mobile, Tablet, Desktop)
-🎯 Tiempo de Desarrollo: [Tu tiempo]
-✅ Desafíos Superados: 5+
+🎯 Development Time: [Your time]
+✅ Challenges Solved: 5+
 ```
 
 ---
 
 <div align="center">
 
-### ⭐ Si este proyecto te resultó útil, considera darle una estrella!
+### ⭐ If you found this project helpful, consider giving it a star!
 
-**[⬆ Volver arriba](#-workit-landing-page)**
+**[⬆ Back to top](#-workit-landing-page)**
 
 </div>
