@@ -1,9 +1,14 @@
 /* Font Family Fraunces - Manrope */
 
+/* Define Fraunces font family */
 @font-face {
-  font-family: "Fraunces", serif;
+  font-family: "Fraunces"; /* Single font family name */
   src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
-  font-family: "Manrope", sans-serif;
+}
+
+/* Define Manrope font family */
+@font-face {
+  font-family: "Manrope"; /* Separate font family */
   src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
 }
 
@@ -21,6 +26,11 @@
 
 /* Mejora la legibilidad del body */
 body {
+  background-color: #ffffff;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  font-family: var(--secondary-font);
+  font-weight: var(--fw-regular);
+  color: var(--color-purple-500);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,11 +76,15 @@ h4,
 h5,
 h6 {
   text-wrap: pretty;
+  font-family: var(--primary-font);
+  font-weight: var(--fw-semibold);
+  color: var(--color-purple-900);
+  line-height: var(--lh-heading-m);
 }
 
 /* Crea contexto de apilamiento para apps React/Next.js */
-#root,
-#__next {
+.root,
+.next {
   isolation: isolate;
 }
 
@@ -129,23 +143,7 @@ h6 {
                       1. BODY
    ==================================================== */
 
-body {
-  background-color: var(--color-white);
-  font-size: 1rem;
-  font-family: var(--secondary-font);
-  font-weight: var(--fw-regular);
-  color: var(--color-purple-500);
-  line-height: var(--lh-body);
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--primary-font);
-  font-weight: var(--fw-semibold);
-  color: var(--color-purple-900);
-  line-height: var(--lh-heading-m);
-}
+/* Estilos aplicados en reset global, ver sección de Reset */
 
 /* ====================================================
                     2. HEADER
@@ -154,22 +152,23 @@ h3 {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: end;
-  padding: 0 15rem;
+  align-items: center;
+  padding: 0 clamp(1rem, 5vw, 15rem);
   background-color: var(--color-purple-900);
   width: 100%;
   height: 5rem;
+  box-sizing: border-box;
 }
 
 .header__link {
   font-family: var(--secondary-font);
-  font-size: var(--fs-button); /* 18px */
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: var(--fw-bold);
   line-height: var(--lh-button);
   color: var(--color-white);
   text-decoration: none;
-  border-bottom: 0.1875rem solid var(--color-green);
-  padding-bottom: 0.25rem; /* 4px */
+  border-block-end: 0.1875rem solid var(--color-green);
+  padding-block-end: 0.25rem; /* 4px */
   transition: color 0.3s ease;
 }
 
@@ -184,7 +183,7 @@ h3 {
 .main__hero {
   width: 100%;
   position: relative;
-  top: 0;
+  inset-block-start: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,16 +199,16 @@ h3 {
   align-items: center;
   width: 50rem;
   text-align: center;
-  margin-top: 6rem;
-  margin-bottom: 20rem;
-  padding-bottom: var(--spacing-1600);
+  margin-block-start: 6rem;
+  margin-block-end: 20rem;
+  padding-block-end: var(--spacing-1600);
 }
 
 .hero__content h1 {
   font-family: var(--primary-font);
-  font-size: 6rem;
+  font-size: clamp(2.5rem, 8vw, 6rem);
   line-height: var(--lh-heading-m);
-  margin-bottom: var(--spacing-800);
+  margin-block-end: var(--spacing-800);
   color: var(--color-white);
 }
 
@@ -245,15 +244,15 @@ h3 {
   width: 55%;
   height: auto;
   position: absolute;
-  top: 60%;
+  inset-block-start: 60%;
   z-index: 2;
 }
 
 .hero__curve {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  inset-block-end: 0;
+  inset-inline-start: 0;
 
   z-index: 1;
 }
@@ -309,7 +308,7 @@ h3 {
 
 .card__title {
   font-family: var(--primary-font);
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   line-height: var(--lh-heading-m);
   color: var(--color-purple-900);
   margin: 0;
@@ -317,7 +316,7 @@ h3 {
 
 .card__content {
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: var(--lh-body);
   color: var(--color-purple-500);
   margin: 0;
@@ -326,8 +325,8 @@ h3 {
 .content__curve {
   width: 100%;
   position: relative;
-  top: 0;
-  left: 0;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   background-color: var(--color-purple-100);
   z-index: 1;
 }
@@ -362,23 +361,24 @@ h3 {
   grid-column: 4 / span 6;
   grid-row: 3 / span 3;
   background-color: var(--color-purple-900);
-  background: url(/assets/images/bg-pattern-3.svg) no-repeat 400px 300px,
-    var(--color-purple-900);
+  background: url(/assets/images/bg-pattern-3.svg), var(--color-purple-900);
+  background-repeat: no-repeat;
+  background-position: 400px 300px;
 }
 
 .cta__title {
   font-family: var(--primary-font);
-  font-size: var(--fs-heading-l);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   line-height: var(--lh-heading-l);
   color: var(--color-white);
-  margin-bottom: var(--spacing-400);
+  margin-block-end: var(--spacing-400);
 }
 
 .cta__content {
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   color: var(--color-purple-100);
-  margin-bottom: var(--spacing-350);
+  margin-block-end: var(--spacing-350);
   text-align: left;
 }
 
@@ -437,10 +437,9 @@ h3 {
     MOBILE (375px)
    ==================== */
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375em) {
   /* MOBILE HEADER */
   .header {
-    padding: 2rem 1rem;
     height: auto;
   }
 
@@ -450,28 +449,28 @@ h3 {
 
   .header__link {
     font-size: 1rem;
-    padding-bottom: 0.25rem;
-    border-bottom-width: 0.1875rem;
+    padding-block-end: 0.25rem;
+    border-block-end-width: 0.1875rem;
   }
 
   /* MOBILE HERO */
   .main__hero {
     background: var(--color-purple-900);
-    padding-bottom: 3%;
+    padding-block-end: 3%;
   }
 
   .hero__content {
     width: 100%;
     max-width: 21.4375rem; /* 343px */
-    margin-top: 4rem;
-    margin-bottom: 10rem;
-    padding-bottom: 0;
+    margin-block-start: 4rem;
+    margin-block-end: 10rem;
+    padding-block-end: 0;
   }
 
   .hero__content h1 {
-    font-size: 3.125rem; /* 50px */
+    font-size: clamp(2.5rem, 6vw, 3.125rem); /* Mobile specific scaling */
     line-height: 1;
-    margin-bottom: 2.5rem;
+    margin-block-end: 2.5rem;
   }
 
   .underline {
@@ -519,7 +518,7 @@ h3 {
   }
 
   .card__title {
-    font-size: 1.75rem; /* 28px */
+    font-size: clamp(1.3rem, 3vw, 1.75rem); /* Mobile responsive */
   }
 
   .card__content {
@@ -551,15 +550,15 @@ h3 {
   }
 
   .cta__title {
-    font-size: 2rem; /* 32px */
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Mobile responsive */
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
   }
 
   .cta__content {
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
   }
 
   .cta__btn {
@@ -590,10 +589,9 @@ h3 {
     TABLET (768px)
    ==================== */
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 48em) and (max-width: 89.9375em) {
   /* TABLET HEADER */
   .header {
-    padding: 2rem 2.5rem;
     height: auto;
   }
 
@@ -610,21 +608,21 @@ h3 {
     background: url("/assets/images/bg-pattern-1.svg") no-repeat -120px 120px / 16.9rem,
       url("/assets/images/bg-pattern-2.svg") no-repeat 110% 290px / 8.8rem,
       var(--color-purple-900);
-    padding-bottom: 12rem;
+    padding-block-end: 12rem;
   }
 
   .hero__content {
     width: 100%;
     max-width: 36rem;
-    margin-top: 3.5rem;
-    margin-bottom: 1cqh;
-    padding-bottom: 0;
+    margin-block-start: 3.5rem;
+    margin-block-end: 1cqh;
+    padding-block-end: 0;
   }
 
   .hero__content h1 {
-    font-size: 3.75rem; /* 60px */
+    font-size: clamp(3rem, 6vw, 3.75rem); /* Tablet specific scaling */
     line-height: 1;
-    margin-bottom: 2.5rem;
+    margin-block-end: 2.5rem;
   }
 
   .underline {
@@ -638,8 +636,8 @@ h3 {
 
   .hero__phone {
     width: 30rem; /* 640px */
-    top: auto;
-    bottom: -6rem;
+    inset-block-start: auto;
+    inset-block-end: -6rem;
   }
 
   .hero__curve {
@@ -684,7 +682,7 @@ h3 {
   .card__title {
     grid-column: 2;
     grid-row: 1;
-    font-size: 2rem; /* 32px */
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Tablet responsive */
     align-self: center;
   }
 
@@ -712,20 +710,20 @@ h3 {
     grid-column: 4 / span 9;
     grid-row: 1;
     padding: 3rem;
-    margin-top: 11rem;
+    margin-block-start: 11rem;
     background: url(/assets/images/bg-pattern-3.svg) no-repeat 90% -60px / 13.5rem,
       var(--color-purple-900);
   }
 
   .cta__title {
-    font-size: 3rem; /* 48px */
+    font-size: clamp(2rem, 6vw, 3rem); /* Tablet responsive */
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
   }
 
   .cta__content {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
   }
 
   .cta__btn {
@@ -749,5 +747,36 @@ h3 {
 
   .social__icon {
     width: 1.25rem; /* 20px */
+  }
+}
+
+/* ====================================================
+          8. ACCESSIBILITY - REDUCED MOTION
+   ==================================================== */
+
+/**
+ * Respects user's motion preferences
+ * Users with vestibular disorders, photosensitivity, or general motion sickness
+ * can enable "Reduce motion" in their OS settings
+ * This media query removes all animations and transitions
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* Disable all transitions and animations */
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    /* Keep scroll behavior smooth as it's not disruptive */
+    scroll-behavior: auto !important;
+  }
+
+  /* Specific overrides for button transitions */
+  .header__link,
+  .hero__btn,
+  .cta__btn {
+    transition: none !important;
   }
 }
