@@ -766,17 +766,17 @@ h6 {
   *::before,
   *::after {
     /* Disable all transitions and animations */
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
     /* Keep scroll behavior smooth as it's not disruptive */
-    scroll-behavior: auto !important;
+    scroll-behavior: auto;
   }
 
   /* Specific overrides for button transitions */
   .header__link,
   .hero__btn,
   .cta__btn {
-    transition: none !important;
+    transition: none;
   }
 }
