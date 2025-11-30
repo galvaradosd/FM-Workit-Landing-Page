@@ -12,75 +12,7 @@
   src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
 }
 
-/* Box-sizing intuitivo */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remueve márgenes por defecto */
-* {
-  margin: 0;
-}
-
-/* Mejora la legibilidad del body */
-body {
-  background-color: #ffffff;
-  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
-  font-family: var(--secondary-font);
-  font-weight: var(--fw-regular);
-  color: var(--color-purple-500);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Elementos multimedia como bloques y responsivos */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* Elementos de formulario heredan tipografía */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Previene desbordamiento de texto */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-/* Mejora el renderizado de texto (propiedades nuevas) */
-p {
-  text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: pretty;
-  font-family: var(--primary-font);
-  font-weight: var(--fw-semibold);
-  color: var(--color-purple-900);
-  line-height: var(--lh-heading-m);
-}
+<
 
 /* Crea contexto de apilamiento para apps React/Next.js */
 .root,
